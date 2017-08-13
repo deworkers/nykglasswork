@@ -1,0 +1,231 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@arrow-left-l-name: 'arrow-left-l';
+@arrow-left-l-x: 57px;
+@arrow-left-l-y: 20px;
+@arrow-left-l-offset-x: -57px;
+@arrow-left-l-offset-y: -20px;
+@arrow-left-l-width: 11px;
+@arrow-left-l-height: 20px;
+@arrow-left-l-total-width: 68px;
+@arrow-left-l-total-height: 58px;
+@arrow-left-l-image: '../img/sprite.png';
+@arrow-left-l: 57px 20px -57px -20px 11px 20px 68px 58px '../img/sprite.png' 'arrow-left-l';
+@arrow-left-name: 'arrow-left';
+@arrow-left-x: 15px;
+@arrow-left-y: 0px;
+@arrow-left-offset-x: -15px;
+@arrow-left-offset-y: 0px;
+@arrow-left-width: 15px;
+@arrow-left-height: 28px;
+@arrow-left-total-width: 68px;
+@arrow-left-total-height: 58px;
+@arrow-left-image: '../img/sprite.png';
+@arrow-left: 15px 0px -15px 0px 15px 28px 68px 58px '../img/sprite.png' 'arrow-left';
+@arrow-right-l-name: 'arrow-right-l';
+@arrow-right-l-x: 57px;
+@arrow-right-l-y: 0px;
+@arrow-right-l-offset-x: -57px;
+@arrow-right-l-offset-y: 0px;
+@arrow-right-l-width: 11px;
+@arrow-right-l-height: 20px;
+@arrow-right-l-total-width: 68px;
+@arrow-right-l-total-height: 58px;
+@arrow-right-l-image: '../img/sprite.png';
+@arrow-right-l: 57px 0px -57px 0px 11px 20px 68px 58px '../img/sprite.png' 'arrow-right-l';
+@arrow-right-name: 'arrow-right';
+@arrow-right-x: 0px;
+@arrow-right-y: 0px;
+@arrow-right-offset-x: 0px;
+@arrow-right-offset-y: 0px;
+@arrow-right-width: 15px;
+@arrow-right-height: 28px;
+@arrow-right-total-width: 68px;
+@arrow-right-total-height: 58px;
+@arrow-right-image: '../img/sprite.png';
+@arrow-right: 0px 0px 0px 0px 15px 28px 68px 58px '../img/sprite.png' 'arrow-right';
+@minus-l-name: 'minus-l';
+@minus-l-x: 30px;
+@minus-l-y: 18px;
+@minus-l-offset-x: -30px;
+@minus-l-offset-y: -18px;
+@minus-l-width: 14px;
+@minus-l-height: 2px;
+@minus-l-total-width: 68px;
+@minus-l-total-height: 58px;
+@minus-l-image: '../img/sprite.png';
+@minus-l: 30px 18px -30px -18px 14px 2px 68px 58px '../img/sprite.png' 'minus-l';
+@minus-name: 'minus';
+@minus-x: 30px;
+@minus-y: 16px;
+@minus-offset-x: -30px;
+@minus-offset-y: -16px;
+@minus-width: 14px;
+@minus-height: 2px;
+@minus-total-width: 68px;
+@minus-total-height: 58px;
+@minus-image: '../img/sprite.png';
+@minus: 30px 16px -30px -16px 14px 2px 68px 58px '../img/sprite.png' 'minus';
+@more-name: 'more';
+@more-x: 0px;
+@more-y: 44px;
+@more-offset-x: 0px;
+@more-offset-y: -44px;
+@more-width: 8px;
+@more-height: 14px;
+@more-total-width: 68px;
+@more-total-height: 58px;
+@more-image: '../img/sprite.png';
+@more: 0px 44px 0px -44px 8px 14px 68px 58px '../img/sprite.png' 'more';
+@plus-l-name: 'plus-l';
+@plus-l-x: 30px;
+@plus-l-y: 28px;
+@plus-l-offset-x: -30px;
+@plus-l-offset-y: -28px;
+@plus-l-width: 14px;
+@plus-l-height: 14px;
+@plus-l-total-width: 68px;
+@plus-l-total-height: 58px;
+@plus-l-image: '../img/sprite.png';
+@plus-l: 30px 28px -30px -28px 14px 14px 68px 58px '../img/sprite.png' 'plus-l';
+@plus-name: 'plus';
+@plus-x: 16px;
+@plus-y: 28px;
+@plus-offset-x: -16px;
+@plus-offset-y: -28px;
+@plus-width: 14px;
+@plus-height: 14px;
+@plus-total-width: 68px;
+@plus-total-height: 58px;
+@plus-image: '../img/sprite.png';
+@plus: 16px 28px -16px -28px 14px 14px 68px 58px '../img/sprite.png' 'plus';
+@search-name: 'search';
+@search-x: 0px;
+@search-y: 28px;
+@search-offset-x: 0px;
+@search-offset-y: -28px;
+@search-width: 16px;
+@search-height: 16px;
+@search-total-width: 68px;
+@search-total-height: 58px;
+@search-image: '../img/sprite.png';
+@search: 0px 28px 0px -28px 16px 16px 68px 58px '../img/sprite.png' 'search';
+@slider-next-name: 'slider-next';
+@slider-next-x: 46px;
+@slider-next-y: 20px;
+@slider-next-offset-x: -46px;
+@slider-next-offset-y: -20px;
+@slider-next-width: 11px;
+@slider-next-height: 20px;
+@slider-next-total-width: 68px;
+@slider-next-total-height: 58px;
+@slider-next-image: '../img/sprite.png';
+@slider-next: 46px 20px -46px -20px 11px 20px 68px 58px '../img/sprite.png' 'slider-next';
+@slider-prev-name: 'slider-prev';
+@slider-prev-x: 46px;
+@slider-prev-y: 0px;
+@slider-prev-offset-x: -46px;
+@slider-prev-offset-y: 0px;
+@slider-prev-width: 11px;
+@slider-prev-height: 20px;
+@slider-prev-total-width: 68px;
+@slider-prev-total-height: 58px;
+@slider-prev-image: '../img/sprite.png';
+@slider-prev: 46px 0px -46px 0px 11px 20px 68px 58px '../img/sprite.png' 'slider-prev';
+@sm-name: 'sm';
+@sm-x: 30px;
+@sm-y: 0px;
+@sm-offset-x: -30px;
+@sm-offset-y: 0px;
+@sm-width: 16px;
+@sm-height: 16px;
+@sm-total-width: 68px;
+@sm-total-height: 58px;
+@sm-image: '../img/sprite.png';
+@sm: 30px 0px -30px 0px 16px 16px 68px 58px '../img/sprite.png' 'sm';
+@spritesheet-width: 68px;
+@spritesheet-height: 58px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @arrow-left-l @arrow-left @arrow-right-l @arrow-right @minus-l @minus @more @plus-l @plus @search @slider-next @slider-prev @sm;
+@spritesheet: 68px 58px '../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
