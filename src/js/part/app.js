@@ -142,6 +142,14 @@ $(document).ready(function() {
         navText: ['','']
     });
 
+    $('.portfolio-nav-inn').owlCarousel({
+        loop:true,
+        nav:true,
+        margin:10,
+        items: 8,
+        navText: ['','']
+    });
+
     $('.references-inn').owlCarousel({
         loop:true,
         nav:true,
