@@ -934,10 +934,18 @@ body {
     &::before {
         display: inline-block;
         width: 4px;
-        height: 8px;
+        height: 9px;
         margin-right: 10px;
         background-image: url(/img/list-marker.png);
         content: "";
+    }
+
+    &.active {
+    	a {
+    		text-decoration: none;
+    		color: #4d4d4d;
+    		cursor: default;
+    	}
     }
 }
 
@@ -989,11 +997,55 @@ body {
 
 .border_wrapper {
 	border: 1px solid #B8B8B8;
+
+	.description {
+		text-align: center;
+		padding: 0px 0 10px;
+	}
 }
 
 .thumb_wrapper .thumb {
     margin: 0 !important;
     padding: 10px;
     border: none;
-    max-width: 260px;
+    max-width: 210px;
+}
+
+
+.tabs-one {
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+
+	li {
+		font-size: 16px;
+		line-height: 24px;
+
+		p {
+
+		}
+	}
+}
+
+#left {
+    float: left;
+    width: 33%;
+}
+
+#center {
+    width: 33%!important;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+#right {
+    float: right;
+    width: 33%;
 }
